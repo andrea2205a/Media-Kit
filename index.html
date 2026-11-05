@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrea Rojas · Media Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+:root{
+  --algodon:#FFD7E7;
+  --petalo:#FAE4E9;
+  --cereza:#2E1A13;
+  --madera:#2E1A13;
+  --fondo:#FFF6F8;
+  --tinta:#2E1A13;
+  --suave:#7E4B52;
+  --ticket:#FFFFFF;
+  --linea:#F0CBD6;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --fondo:#2A130D;
+    --tinta:#FAE4E9;
+    --suave:#D9A9B5;
+    --ticket:#3A1C16;
+    --linea:#5A2A30;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--fondo);color:var(--tinta);font-family:"Jost",system-ui,sans-serif;font-weight:400;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,video:focus-visible{outline:3px solid var(--algodon);outline-offset:3px;border-radius:6px}
+.script{font-family:"Mrs Saint Delafield","Brush Script MT",cursive;font-weight:400;letter-spacing:0}
+
+/* Hero */
+.hero{background:var(--cereza);color:var(--petalo);position:relative;overflow:hidden}
+.rayas{height:90px;background:repeating-linear-gradient(90deg,var(--algodon) 0 22px,var(--cereza) 22px 52px)}
+.hero-in{max-width:880px;margin:0 auto;padding:40px 22px 64px}
+.hola{font-size:.95rem;letter-spacing:.04em;opacity:.85}
+h1{font-size:clamp(3.6rem,17vw,9rem);line-height:1.05;white-space:nowrap;color:var(--algodon);margin:4px 0 0 -6px}
+.tag{font-size:clamp(1.15rem,4.4vw,1.8rem);line-height:1.25;font-weight:500;max-width:30ch;margin-top:18px}
+.bio{max-width:52ch;margin-top:16px;font-size:1.03rem;opacity:.9;font-weight:300}
+.redes{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:500;padding:12px 20px;border-radius:999px;background:var(--algodon);color:var(--cereza);font-size:.98rem}
+.btn.alt{background:transparent;color:var(--petalo);box-shadow:inset 0 0 0 1.5px var(--petalo)}
+.btn svg{width:18px;height:18px}
+
+/* Secciones */
+section{max-width:880px;margin:0 auto;padding:64px 22px 0}
+h2{font-size:clamp(2rem,8.6vw,4.8rem);line-height:1.1;white-space:nowrap;color:var(--cereza)}
+@media (prefers-color-scheme:dark){h2{color:var(--algodon)}}
+.sub{color:var(--suave);margin-top:6px;max-width:52ch;font-weight:300}
+
+.ofrezco{display:grid;gap:16px;margin-top:22px}
+.ofrezco p{font-size:1.06rem;padding-left:18px;border-left:3px solid var(--algodon);max-width:56ch;font-weight:300}
+.ofrezco strong{font-weight:600}
+
+/* Videos */
+.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.video{border-radius:16px;overflow:hidden;background:var(--cereza)}
+.video video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:#000}
+.video figcaption{padding:10px 14px 12px;color:var(--petalo);font-weight:500;font-size:.92rem}
+@media (max-width:620px){
+  .videos{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-right:-22px;padding-right:22px}
+  .video{scroll-snap-align:start}
+}
+
+/* Totales */
+.totales{margin-top:26px;background:var(--cereza);color:var(--petalo);border-radius:22px;overflow:hidden}
+.totales .rayas{height:16px}
+.tot-in{padding:26px 24px 28px}
+.grande{font-size:clamp(3rem,13vw,5.2rem);font-weight:600;line-height:.95;letter-spacing:-.03em;color:var(--algodon)}
+.grande-l{font-weight:300;margin-top:6px}
+.mini{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 14px;margin-top:24px}
+@media (min-width:620px){.mini{grid-template-columns:repeat(4,1fr)}}
+.mini b{display:block;font-size:1.7rem;font-weight:600;line-height:1;color:var(--algodon)}
+.mini span{font-size:.92rem;font-weight:300}
+
+/* Tickets */
+.tickets{display:grid;gap:24px;margin-top:28px}
+@media (min-width:700px){.tickets{grid-template-columns:repeat(2,1fr);align-items:start}}
+.ticket{background:var(--ticket);font-size:.9rem;padding:22px 18px 26px;position:relative;font-variant-numeric:tabular-nums;
+  --diente:radial-gradient(circle at 8px 0,transparent 7px,var(--ticket) 7.5px);
+  filter:drop-shadow(0 2px 0 var(--linea))}
+.ticket::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:10px;background:var(--diente);background-size:16px 10px}
+.t-top{text-align:center;border-bottom:1px dashed var(--suave);padding-bottom:12px;margin-bottom:12px}
+.t-top h3{font-family:"Mrs Saint Delafield","Brush Script MT",cursive;font-weight:400;font-size:2.4rem;line-height:1.1;color:var(--cereza)}
+@media (prefers-color-scheme:dark){.t-top h3{color:var(--algodon)}}
+.t-top p{color:var(--suave);font-size:.8rem}
+.t-red{font-weight:600;margin-top:10px}
+.fila{display:flex;justify-content:space-between;gap:10px}
+.fila span:first-child{color:var(--suave);font-weight:300}
+.t-total{border-top:1px dashed var(--suave);margin-top:12px;padding-top:12px;font-weight:600}
+.t-total .fila span:first-child{color:var(--tinta);font-weight:500}
+.t-total .big{font-size:1.12rem}
+.gracias{text-align:center;margin-top:12px;font-family:"Mrs Saint Delafield","Brush Script MT",cursive;font-size:1.7rem;color:var(--suave)}
+
+/* Cierre */
+.cierre{max-width:880px;margin:72px auto 0;padding:0 22px 64px}
+.cierre-in{background:var(--algodon);color:var(--cereza);border-radius:22px;padding:30px 24px 32px}
+.cierre h2{color:var(--cereza)}
+.cierre p{margin-top:6px;max-width:46ch;font-weight:400}
+.cierre .btn{background:var(--cereza);color:var(--petalo)}
+.cierre .btn.alt{background:transparent;color:var(--cereza);box-shadow:inset 0 0 0 1.5px var(--cereza)}
+.pie{text-align:center;color:var(--suave);font-size:.85rem;margin-top:22px;font-weight:300}
+
+@media (prefers-reduced-motion:no-preference){
+  h1{animation:entra .9s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes entra{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="rayas" aria-hidden="true"></div>
+  <div class="hero-in">
+    <p class="hola">Creadora de contenido de comida en Tampa</p>
+    <h1 class="script">Andrea Rojas</h1>
+    <p class="tag">Foodie | Contenido gastronómico que da hambre.</p>
+    <p class="bio">Llevo más de 5 meses creando videos para negocios con mi propia agencia de contenido. Ahora cuento historias de restaurantes desde mis redes: platos que se ven tan ricos que la gente quiere ir a probarlos.</p>
+    <div class="redes">
+      <a class="btn" href="https://www.instagram.com/dreaa_rojas" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        @dreaa_rojas</a>
+      <a class="btn alt" href="https://www.tiktok.com/@bydrea.official" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.4 7.4 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg>
+        @bydrea.official</a>
+    </div>
+  </div>
+  </header>
+
+<section>
+  <h2 class="script">Lo que gana tu restaurante</h2>
+  <div class="ofrezco">
+    <p><strong>Comida que se ve irresistible.</strong> Mi foco principal es que cada plato se vea rico en cámara: la textura, el corte, la primera mordida.</p>
+    <p><strong>Gente que conecta.</strong> Muestro la experiencia como una persona real, para que quien lo ve sienta que ya está sentado en tu mesa.</p>
+    <p><strong>Experiencia de agencia.</strong> Sé grabar, editar y publicar pensando en lo que funciona en Instagram y TikTok.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="script">Mi trabajo</h2>
+  <p class="sub">Restaurantes de Tampa, publicados en Instagram y TikTok.</p>
+  <div class="videos">
+    <figure class="video"><video controls playsinline preload="metadata" poster="videos/donaalicia.jpg" src="videos/donaalicia.mp4" aria-label="Video: Doña Alicia"></video><figcaption>Doña Alicia</figcaption></figure>
+    <figure class="video"><video controls playsinline preload="metadata" poster="videos/piccolobuco.jpg" src="videos/piccolobuco.mp4" aria-label="Video: Piccolo Buco"></video><figcaption>Piccolo Buco</figcaption></figure>
+    <figure class="video"><video controls playsinline preload="metadata" poster="videos/meltndip.jpg" src="videos/meltndip.mp4" aria-label="Video: Melt N Dip"></video><figcaption>Melt N Dip</figcaption></figure>
+    <figure class="video"><video controls playsinline preload="metadata" poster="videos/kokoro.jpg" src="videos/kokoro.mp4" aria-label="Video: Kokoro Sushi"></video><figcaption>Kokoro Sushi</figcaption></figure>
+    <figure class="video"><video controls playsinline preload="metadata" poster="videos/copa.jpg" src="videos/copa.mp4" aria-label="Video: Copa de chocolate"></video><figcaption>Copa de chocolate</figcaption></figure>
+    <figure class="video"><video controls playsinline preload="metadata" poster="videos/timpano.jpg" src="videos/timpano.mp4" aria-label="Video: Timpano"></video><figcaption>Timpano</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2 class="script">Resultados</h2>
+  <p class="sub">Estadísticas de Instagram y TikTok de cada video.</p>
+
+  <div class="tickets">
+    <article class="ticket">
+      <div class="t-top"><h3>Doña Alicia</h3><p>Restaurante cubano · Tampa · oct 2026 · colab con @tampadalicia</p></div>
+      <div class="t-red">Instagram</div>
+      <div class="fila"><span>Visualizaciones</span><span>124,983</span></div>
+      <div class="fila"><span>Me gusta</span><span>2,200</span></div>
+      <div class="fila"><span>Compartidos</span><span>1,100</span></div>
+      <div class="fila"><span>Guardados</span><span>518</span></div>
+      <div class="t-red">TikTok</div>
+      <div class="fila"><span>Visualizaciones</span><span>44,900</span></div>
+      <div class="fila"><span>Me gusta</span><span>1,786</span></div>
+      <div class="fila"><span>Compartidos</span><span>1,689</span></div>
+      <div class="fila"><span>Guardados</span><span>958</span></div>
+      <div class="t-total">
+        <div class="fila big"><span>Total vistas</span><span>169,883</span></div>
+        <div class="fila"><span>Me gusta</span><span>3,986</span></div>
+        <div class="fila"><span>Compartidos</span><span>2,789</span></div>
+        <div class="fila"><span>Guardados</span><span>1,476</span></div>
+        <div class="fila"><span>Seguidores nuevos</span><span>175</span></div>
+      </div>
+      <p class="gracias">buen provecho</p>
+    </article>
+
+    <article class="ticket">
+      <div class="t-top"><h3>Piccolo Buco</h3><p>Restaurante italiano · Tampa · sep 2026</p></div>
+      <div class="t-red">Instagram</div>
+      <div class="fila"><span>Visualizaciones</span><span>95,652</span></div>
+      <div class="fila"><span>Me gusta</span><span>1,400</span></div>
+      <div class="fila"><span>Compartidos</span><span>946</span></div>
+      <div class="fila"><span>Guardados</span><span>533</span></div>
+      <div class="t-red">TikTok</div>
+      <div class="fila"><span>Visualizaciones</span><span>42,400</span></div>
+      <div class="fila"><span>Me gusta</span><span>1,488</span></div>
+      <div class="fila"><span>Compartidos</span><span>1,010</span></div>
+      <div class="fila"><span>Guardados</span><span>1,125</span></div>
+      <div class="t-total">
+        <div class="fila big"><span>Total vistas</span><span>138,052</span></div>
+        <div class="fila"><span>Me gusta</span><span>2,888</span></div>
+        <div class="fila"><span>Compartidos</span><span>1,956</span></div>
+        <div class="fila"><span>Guardados</span><span>1,658</span></div>
+        <div class="fila"><span>Seguidores nuevos</span><span>169</span></div>
+      </div>
+      <p class="gracias">buen provecho</p>
+    </article>
+
+    <article class="ticket">
+      <div class="t-top"><h3>Melt N Dip</h3><p>Crepe de chocolate Dubai · Tampa · ago 2026</p></div>
+      <div class="t-red">Instagram</div>
+      <div class="fila"><span>Reproducciones</span><span>20,794</span></div>
+      <div class="fila"><span>Me gusta</span><span>39</span></div>
+      <div class="fila"><span>Compartidos</span><span>6</span></div>
+      <div class="fila"><span>Guardados</span><span>3</span></div>
+      <div class="t-red">TikTok</div>
+      <div class="fila"><span>Visualizaciones</span><span>55,100</span></div>
+      <div class="fila"><span>Me gusta</span><span>1,820</span></div>
+      <div class="fila"><span>Compartidos</span><span>1,301</span></div>
+      <div class="fila"><span>Guardados</span><span>977</span></div>
+      <div class="t-total">
+        <div class="fila big"><span>Total vistas</span><span>75,894</span></div>
+        <div class="fila"><span>Me gusta</span><span>1,859</span></div>
+        <div class="fila"><span>Compartidos</span><span>1,307</span></div>
+        <div class="fila"><span>Guardados</span><span>980</span></div>
+        <div class="fila"><span>Seguidores nuevos</span><span>261</span></div>
+      </div>
+      <p class="gracias">buen provecho</p>
+    </article>
+    <article class="ticket">
+      <div class="t-top"><h3>Kokoro Sushi</h3><p>Sushi · Tampa · oct 2026</p></div>
+      <div class="t-red">Instagram</div>
+      <div class="fila"><span>Visualizaciones</span><span>14,481</span></div>
+      <div class="fila"><span>Me gusta</span><span>563</span></div>
+      <div class="fila"><span>Compartidos</span><span>470</span></div>
+      <div class="fila"><span>Guardados</span><span>176</span></div>
+      <div class="t-red">TikTok</div>
+      <div class="fila"><span>Visualizaciones</span><span>34,700</span></div>
+      <div class="fila"><span>Me gusta</span><span>1,572</span></div>
+      <div class="fila"><span>Compartidos</span><span>1,200</span></div>
+      <div class="fila"><span>Guardados</span><span>902</span></div>
+      <div class="t-total">
+        <div class="fila big"><span>Total vistas</span><span>49,181</span></div>
+        <div class="fila"><span>Me gusta</span><span>2,135</span></div>
+        <div class="fila"><span>Compartidos</span><span>1,670</span></div>
+        <div class="fila"><span>Guardados</span><span>1,078</span></div>
+        <div class="fila"><span>Seguidores nuevos</span><span>509</span></div>
+      </div>
+      <p class="gracias">buen provecho</p>
+    </article>
+
+  </div>
+</section>
+
+<div class="cierre">
+  <div class="cierre-in">
+    <h2 class="script">¿Trabajamos juntos?</h2>
+    <p>Escríbeme por WhatsApp y hablamos de cómo mostrar tu restaurante.</p>
+    <div class="redes">
+      <a class="btn" href="https://wa.me/19413450468?text=Hola%20Andrea%2C%20vi%20tu%20media%20kit%20y%20me%20gustar%C3%ADa%20trabajar%20contigo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3z"/></svg>Escribir por WhatsApp</a>
+    </div>
+  </div>
+  <p class="pie">Andrea Rojas · Tampa, FL · Estadísticas al 4 de noviembre de 2026</p>
+</div>
+
+</body>
+</html>
